@@ -20,12 +20,6 @@
     </thead>
     <tbody>
 
-<%--    <tr>--%>
-<%--        <td></td>--%>
-<%--        <td></td>--%>
-<%--        <td></td>--%>
-<%--    </tr>--%>
-
     <%
         for (Member member : members) {
             out.write(" <tr>");

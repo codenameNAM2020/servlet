@@ -18,9 +18,5 @@ public class MemberListControllerV4 implements ControllerV4 {
 
         model.put("members", members);
         return "members";
-//        ModelView mv = new ModelView("members");
-//        mv.getModel().put("members", members);
-//
-//        return mv;
     }
 }

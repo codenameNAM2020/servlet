@@ -24,8 +24,6 @@ public class ResponseHeaderServlet extends HttpServlet {
         response.setHeader("my-header", "hello");
 
         // [Header 편의 메서드]
-//        content(response);
-//        cookie(response);
         redirect(response);
 
         PrintWriter writer = response.getWriter();
@@ -55,6 +53,5 @@ public class ResponseHeaderServlet extends HttpServlet {
 
         response.setStatus(HttpServletResponse.SC_FOUND); //302
         response.setHeader("Location", "/basic/hello-form.html");
-//        response.sendRedirect("/basic/hello-form.html");
     }
 }

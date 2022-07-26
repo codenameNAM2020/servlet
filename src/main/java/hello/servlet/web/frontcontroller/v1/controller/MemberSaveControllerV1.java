@@ -22,9 +22,6 @@ public class MemberSaveControllerV1 implements ControllerV1 {
         Member member = new Member(username, age);
         memberRepository.save(member);
 
-        //오타찾기.. 아래 출력이 나오지 않았었음..
-//        System.out.println("========================================================================");
-
         //Model에 데이터를 보관한다.
         request.setAttribute("member", member);
 
